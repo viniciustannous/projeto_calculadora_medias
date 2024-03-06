@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Médias</title>
+    <title>Cadastro nome e Telefone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,20 +13,19 @@
 <body>
     <div class="container">
     <header>
-        <img src="./images/logo.png" alt="capelo e diploma">
-        <h1>Calculadora de Médias</h1>
+        <img src="./images/telefone.png.png" alt="telefone">
+        <h1>Cadastro de Nomes e Telefones</h1>
     </header>
     <form id="form-atividade">
-        <input type="text" id="nome-atividade" required placeholder="Nome da atividade">
-        <input type="number" id="nota-atividade" required placeholder="Nota da Atividade" min="0" max="10">
+        <input type="text" id="nome-atividade" required placeholder="Nome do Usuário">
+        <input type="number" id="nota-atividade" required placeholder="Telefone" >
         <button type="submit">Adicionar +</button>
     </form>
     <table cellspacing="0">
         <thead>
             <tr>
-                <th>Nome da Atividade</th>
-                <th>Nota da Atividade</th>
-                <th>Aprovado?</th>
+                <th>Nome do Cliente</th>
+                <th>Telefone</th>
             </tr>
         </thead>
         <tbody>
@@ -34,9 +33,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Média Final</td>
-                <td id="media-final-valor">---</td>
-                <td id="media-final-resultado"><span class="resultado aprovado">---</span></td>
+                <td>---</td>
+                
             </tr>
         </tfoot>
     </table>

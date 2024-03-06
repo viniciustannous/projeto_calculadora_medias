@@ -22,7 +22,7 @@ function adicionaLinha(){
     const inputNotaAtividade = document.getElementById('nota-atividade');
 
     if(atividades.includes(inputNomeAtividade.value)){
-        alert(`a atividade ${inputNomeAtividade.value} já foi inserida`)
+        alert(`o telefone ${inputNotaAtividade.value} já foi inserido`)
     } else{
 
     atividades.push(inputNomeAtividade.value);
@@ -31,7 +31,6 @@ function adicionaLinha(){
     let linha = '<tr>';
     linha += `<td>${inputNomeAtividade.value}</td>`;
     linha += `<td>${inputNotaAtividade.value}</td>`;
-    linha += `<td>${inputNotaAtividade.value >= 7 ? imgAprovado : imgReprovado}</td>`;
     linha += '</tr>;'
 
     linhas += linha;
@@ -45,24 +44,4 @@ function atualizaTabela(){
     corpotabela.innerHTML = linhas
 }
 
-function atualizaMediaFinal(){
-    const mediaFinal = calculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);
-    document.getElementById('media-final-resultado').innerHTML = mediaFinal >=7 ? spanAprovado : spanReprovado;
-    
-
-
-
-}
-
-function calculaMediaFinal(){
-    let somaDasNotas = 0;  
-
-for (let i = 0; i<notas.length; i++){
-    somaDasNotas += notas[i];
-}
-
-return somaDasNotas / notas.length;
-
-}
